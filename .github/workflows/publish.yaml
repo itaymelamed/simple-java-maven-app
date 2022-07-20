@@ -16,4 +16,4 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Publish package
-        run: mvn --batch-mode build
+        run: mvn package  -Dmaven.test.skip
